@@ -1,0 +1,1 @@
+c:\users\admin2\documents\visual studio 2013\Projects\ProyectoEMR\ProyectoEMR\bin\Debug\ProyectoEMR.exe.config
