@@ -7,7 +7,7 @@ script:
   - grep "Test Results" build.log
 install:
   - sudo apt-get install -y gtk-sharp2
-  - nuget restore solution-name.sln
+  - nuget restore ProyectoEMR.sln
 mono:
   - latest
   - 3.12.0
