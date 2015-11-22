@@ -16,6 +16,6 @@
 *	El sistema emite el ticket con los datos del viaje (Línea de colectivo, fecha y hora, monto pagado y saldo disponible).
 
 ##Imagenes Travis-ci
-![Alt text](TP-IngenieriaSoftware2/blob/master/ProyectoEMR/Imagenes/Travis01.jpg?raw=true "Current")
-![Alt text](TP-IngenieriaSoftware2/blob/master/ProyectoEMR/Imagenes/Travis02.jpg?raw=true "Branches")
-![Alt text](TP-IngenieriaSoftware2/blob/master/ProyectoEMR/Imagenes/Travis03.jpg?raw=true "Build History")
+![Alt text](/ProyectoEMR/Imagenes/Travis01.jpg?raw=true "Current")
+![Alt text](/ProyectoEMR/Imagenes/Travis02.jpg?raw=true "Branches")
+![Alt text](/ProyectoEMR/Imagenes/Travis03.jpg?raw=true "Build History")
