@@ -1,5 +1,5 @@
 # TP-IngenieriaSoftware2
-# Casos de Uso
+## Casos de Uso
 Caso de Uso Recarga:
 •	El cliente llega a la terminal PDV (Punto de Venta).
 •	El cajero inicia una nueva recarga.
