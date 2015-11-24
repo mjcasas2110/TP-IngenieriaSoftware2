@@ -1,0 +1,4 @@
+C:\Users\mjcasas\Downloads\TP\ProyectoEMRTest\bin\Debug\ProyectoEMRTest.dll
+C:\Users\mjcasas\Downloads\TP\ProyectoEMRTest\bin\Debug\ProyectoEMRTest.pdb
+C:\Users\mjcasas\Downloads\TP\ProyectoEMRTest\obj\Debug\ProyectoEMRTest.dll
+C:\Users\mjcasas\Downloads\TP\ProyectoEMRTest\obj\Debug\ProyectoEMRTest.pdb
