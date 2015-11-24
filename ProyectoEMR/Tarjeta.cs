@@ -28,7 +28,7 @@ namespace ProyectoEMR
                 TimeSpan diferenciaViajes = FechaHoraViaje - ultimoViaje.Fecha;
                 if (ultimoViaje.ColectivoLinea != Colectivo.Linea && diferenciaViajes.TotalMinutes <= 60 && Transbordo)
                 {
-                    if (MedioBoleto)
+                    if (MedioBoleto && 6 <= FechaHoraViaje.Hour && FechaHoraViaje.Hour <= 24)
                     {
                         /*Transbordo Medio Boleto*/
                         if (Saldo >= 0.96)
@@ -56,14 +56,14 @@ namespace ProyectoEMR
                     }
                 }
             }
-            if (MedioBoleto)
+            if (MedioBoleto && 6 <= FechaHoraViaje.Hour && FechaHoraViaje.Hour <= 24)
             {
                 /*Medio Boleto*/
-                if (Saldo >= 2.90)
+                if (Saldo >= 1.90)
                 {
-                    Saldo -= 2.90;
+                    Saldo -= 1.90;
                     Transbordo = true;
-                    Viaje viaje = new Viaje(FechaHoraViaje, Colectivo.Linea, Colectivo.Empresa, 2.90);
+                    Viaje viaje = new Viaje(FechaHoraViaje, Colectivo.Linea, Colectivo.Empresa, 1.90);
                     viajes.Add(viaje);
                     return true;
                 }
@@ -90,7 +90,7 @@ namespace ProyectoEMR
             }
         }
 
-        public string TotalViajes()
+        public string ViajesDetalle()
         {
             string lista = "";
             foreach (var viaje in viajes)
@@ -98,6 +98,11 @@ namespace ProyectoEMR
                 lista += viaje.Fecha.ToString() + " " + viaje.ColectivoLinea + " " + viaje.Monto.ToString() + "\n";
             }
             return lista;
+        }
+
+        public int ViajesTotal()
+        {
+            return viajes.Count();
         }
 
         public void RecargarSaldo(double Monto)

@@ -29,7 +29,8 @@ namespace ProyectoEMR
             Console.WriteLine(": " + tarjeta1.PagarBoleto(colectivo2, DateTime.Now.AddMinutes(-30)));
             Console.WriteLine(": " + tarjeta1.PagarBoleto(colectivo3, DateTime.Now.AddMinutes(-10)));
             Console.WriteLine(": " + tarjeta1.PagarBoleto(colectivo1, DateTime.Now));
-            Console.WriteLine(tarjeta1.TotalViajes());
+            Console.WriteLine(tarjeta1.ViajesDetalle());
+            Console.WriteLine(tarjeta1.ViajesTotal());
             Console.WriteLine("Saldo: " + tarjeta1.Saldo);
 
             Console.WriteLine("---------TARJETA 2---------");
@@ -44,7 +45,8 @@ namespace ProyectoEMR
             Console.WriteLine(": " + tarjeta2.PagarBoleto(colectivo2, DateTime.Now.AddMinutes(-30)));
             Console.WriteLine(": " + tarjeta2.PagarBoleto(colectivo3, DateTime.Now.AddMinutes(-10)));
             Console.WriteLine(": " + tarjeta2.PagarBoleto(colectivo1, DateTime.Now));
-            Console.WriteLine(tarjeta2.TotalViajes());
+            Console.WriteLine(tarjeta2.ViajesDetalle());
+            Console.WriteLine(tarjeta1.ViajesTotal());
             Console.WriteLine("Saldo: " + tarjeta2.Saldo);
 
             Console.ReadKey();
