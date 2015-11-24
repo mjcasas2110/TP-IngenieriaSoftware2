@@ -1,14 +1,9 @@
-# TP-IngenieriaSoftware2
 language: csharp
-solution: ProyectoEMR.sln
-install:
-  - sudo apt-get install -y gtk-sharp2
-  - nuget restore ProyectoEMR.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory ProyectoEMRTest
-mono:
-  - latest
-  - 3.12.0
-  - 3.10.0
 script:
-  - xbuild /p:Configuration=Release ProyectoEMR.sln
-  - mono ./ProyectoEMRTest/NUnit.Runners.2.6.4/tools/nunit-console.exe ./ProyectoEMRTest/bin/Debug/ProyectoEMRTest.dll
+  - xbuild /p:Configuration=Debug solution-name.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore solution-name.sln
+after_script:
+  - nunit-console Tests/bin/Debug/Tests.dll
