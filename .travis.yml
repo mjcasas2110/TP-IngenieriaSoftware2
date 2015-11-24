@@ -1,9 +1,9 @@
 language: csharp
 script:
-  - xbuild /p:Configuration=Debug solution-name.sln
+  - xbuild /p:Configuration=Debug ProyectoEMR.sln
 before_install:
   - sudo apt-get install nunit-console
 before_script:
-  - nuget restore solution-name.sln
+  - nuget restore ProyectoEMR.sln
 after_script:
-  - nunit-console Tests/bin/Debug/Tests.dll
+  - nunit-console ProyectoEMRTest/bin/Debug/ProyectoEMRTest.dll
